@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Webinar Registration</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+          body { font-family: 'Segoe UI', Arial, sans-serif; text-align: center; background-color: #f4f7f6; padding: 20px; color: #333; }
+          .card { background: white; max-width: 500px; margin: 40px auto; padding: 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+          h1 { color: #2c3e50; margin-bottom: 10px; }
+          .info-box { background: #eef2f3; padding: 15px; border-radius: 12px; margin: 20px 0; text-align: left; border-left: 5px solid #3498db; }
+          .btn { background: #3498db; color: white; padding: 16px 32px; text-decoration: none; font-size: 18px; font-weight: bold; border-radius: 8px; display: inline-block; margin-top: 20px; transition:
+  0.3s; }
+          .btn:hover { background: #2980b9; transform: translateY(-2px); }
+          .yt-link { color: #c4302b; font-weight: bold; text-decoration: none; }
+      </style>
+  </head>
+  <body>
+      <div class="card">
+          <h1>Medical Webinar</h1>
+          <p>Welcome! Please find our details below.</p>
+
+          <div class="info-box">
+              <strong>📍 Clinic Address:</strong><br>
+              {{ address }}
+          </div>
+
+          <div class="info-box">
+              <strong>📺 Learn More:</strong><br>
+              <a class="yt-link" href="{{ yt_link }}" target="_blank">Visit our YouTube Channel</a>
+          </div>
+
+          <p>To receive the <b>Webinar Link</b> and join the community, please register below.</p>
+          <a href="{{ pay_link }}" class="btn">Register & Pay Now</a>
+      </div>
+  </body>
+  </html>
+  - Click "Commit changes".
+
+  For the Success Page:
+  - Click "Add file" $\rightarrow$ "Create new file".
+  - In the "Name your file" box, type: templates/success.html
+  - Paste this code:
+  <!DOCTYPE html>
+  <html>
+  <head>
+          <div class="info-box">
+              <strong>📍 Clinic Address:</strong><br>
+              {{ address }}
+          </div>
+
+          <div class="info-box">
+              <strong>📺 Learn More:</strong><br>
+              <a class="yt-link" href="{{ yt_link }}" target="_blank">Visit our YouTube Channel</a>
+          </div>
+
+          <p>To receive the <b>Webinar Link</b> and join the community, please register below.</p>
+  </html>
